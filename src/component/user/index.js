@@ -43,7 +43,7 @@ class User extends React.Component {
                 <List renderHeader={()=>'简介'}>
                     <Item multipleLine>
                         {props.title}
-                        {props.desc.split('\n').map(v=><Brief key={v}>{v}</Brief>)}
+                        {/* {props.desc.split('\n').map(v=><Brief key={v}>{v}</Brief>)} */}
                         {props.money ? <Brief>薪资：{props.money}</Brief> : null}
                     </Item>
                 </List>
