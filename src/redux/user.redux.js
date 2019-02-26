@@ -43,6 +43,11 @@ export function user(state = initState, action) {
     }
 }
 
+
+export function logoutSubmit() {
+    return { type : LOGOUT }
+}
+
 // action creator
 function authSuccess(obj) {
     const { pwd, ...data } = obj
@@ -106,6 +111,3 @@ export function update(data) {
     }
 }
 
-export function logoutSubmit() {
-    return { type : LOGOUT }
-}
